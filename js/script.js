@@ -11,7 +11,7 @@ const init = () => {
   preload.show();
   const response = new Promise((resolve) => {
     resolve(fetchRequest('../headlines.json', {
-      callback: renderCards,
+      callback: (err, data) => renderCards(null, data, 8),
     }));
   });
   return response;

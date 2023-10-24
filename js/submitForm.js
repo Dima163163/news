@@ -20,11 +20,11 @@ const submitForm = (form) => {
             document.querySelector('.section-search').style = 'display: block';
             document.querySelector('.section-title__title-search').textContent =
             `По вашему запросу "${search}"  найдено ${newArr.length}`;
-            return renderCards(null, newArr);
+            return renderCards(null, newArr, 8);
           },
         }),
         fetchRequest('../headlines.json', {
-          callback: renderCards,
+          callback: (err, data) => renderCards(null, data, 4),
         }),
       ]);
     };

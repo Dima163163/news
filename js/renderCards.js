@@ -1,4 +1,4 @@
-const renderCards = (err, data) => {
+const renderCards = (err, data, numb) => {
   console.log('err, data', err, data);
   if (err) {
     console.warn(err, data);
@@ -102,8 +102,8 @@ const renderCards = (err, data) => {
     card.append(divBottom);
     return card;
   });
-  if (news.length > 8) {
-    const newsArr = news.slice(0, 8);
+  if (news.length > numb) {
+    const newsArr = news.slice(0, numb);
     template.append(...newsArr);
   } else {
     template.append(...news);
