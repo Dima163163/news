@@ -1,0 +1,10 @@
+@import 'normalize.css';
+@import 'var.css';
+@import 'global.css';
+@import 'header.css';
+@import 'main.css';
+@import 'section-title.css';
+@import 'section-news.css';
+@import 'section-search.css';
+@import 'cards.css';
+@import 'footer.css';

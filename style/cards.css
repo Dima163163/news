@@ -1,0 +1,62 @@
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 40px 0 50px;
+}
+
+.card {
+  width: 270px;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card__content {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.card__image {
+  width: 270px;
+  height: 200px;
+}
+
+.card__content-top {
+  display: flex;
+  align-items: start;
+  position: relative;
+}
+
+.card__icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-bottom: 10px;
+}
+
+.card__title {
+  width: 90%;
+  font-size: 16px;
+  line-height: 130%;
+  font-weight: 700;
+}
+
+.card__text {
+  font-size: 12px;
+  line-height: 130%;
+  font-weight: 300;
+}
+
+.card__bottom {
+  display: flex;
+  justify-content: space-between;
+  color: var(--grey, #8E8E8E);
+}
+
+.card__date-wrapper {
+  display: flex;
+  gap: 12px;
+}

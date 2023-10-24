@@ -1,0 +1,8 @@
+.section-search {
+  display: none;
+  border-bottom: 1px solid var(--light-grey, #e6e6e6);
+}
+
+.cards-search {
+  padding: 20px 0;
+}

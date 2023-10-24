@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/style.css">
+  <title>News</title>
+  <script type="module" src="/js/script.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-wrapper">
+        <a href="./" class="header-logo">
+          <img src="image/logo.svg" alt="logo">
+        </a>
+        <form class="header__form" action="https://jsonplaceholder.typicode.com/posts">
+          <fieldset class="header-fieldset">
+						<input class="header-border header-input" type="text" name="search" id="search" placeholder="Я хочу узнать про...">
+            <button type="submit" class="header-btn">
+              <img src="image/ep_search.svg" alt="search">
+            </button>
+          </fieldset>
+        </form>
+        <select class="header-border header-select" name="country" id="country">
+          <option value="ru" selected>Россия</option>
+          <option value="us">США</option>
+        </select>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="section-search">
+      <section class="section-title section-title-search">
+        <div class="container">
+          <div class="section-title__wrapper">
+            <h2 class="section-title__title-search"></h2>
+          </div>
+        </div>
+      </section>
+      <div class="container">
+        <div class="cards-search"></div>
+      </div>
+    </section>
+    <section class="section-news">
+      <section class="section-title">
+        <div class="container">
+          <div class="section-title__wrapper">
+            <h2 class="section-title__title">Свежие новости</h2>
+          </div>
+        </div>
+      </section>
+      <div class="container">
+        <div class="cards">
+          <!-- <a class="card">
+            <img class="card__image" src="image/news-img.png" alt="news-image">
+            <div class="card__content">
+              <div class="card__content-top">
+                <h3 class="card__title">В России начали выпускать суверенные печатные платы — в них только отечественное сырьё и материалы</h3>
+                <img class="card__icon" src="image/arrow-right.svg" alt="arrow-right">
+              </div>
+              <p class="card__text">Холдинг «Российские космические системы», входящий в состав «Роскосмоса»...</p>
+              <div class="card__bottom">
+                <div class="card__date-wrapper">
+                  <p class="card__date">16/03/2022</p>
+                  <p class="card__time">11:06</p>
+                </div>
+                <div class="card__author-wrapper">
+                  <p class="card__author">
+                    Эрик Крипке
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+          </a>
+          <a class="card">
+            <img class="card__image" src="image/news-img.png" alt="news-image">
+            <div class="card__content">
+              <div class="card__content-top">
+                <h3 class="card__title">В России начали выпускать суверенные печатные платы — в них только отечественное сырьё и материалы</h3>
+                <img class="card__icon" src="image/arrow-right.svg" alt="arrow-right">
+              </div>
+              <p class="card__text">Холдинг «Российские космические системы», входящий в состав «Роскосмоса»...</p>
+              <div class="card__bottom">
+                <div class="card__date-wrapper">
+                  <p class="card__date">16/03/2022</p>
+                  <p class="card__time">11:06</p>
+                </div>
+                <div class="card__author-wrapper">
+                  <p class="card__author">
+                    Эрик Крипке
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+          </a>
+          <a class="card">
+            <img class="card__image" src="image/news-img.png" alt="news-image">
+            <div class="card__content">
+              <div class="card__content-top">
+                <h3 class="card__title">В России начали выпускать суверенные печатные платы — в них только отечественное сырьё и материалы</h3>
+                <img class="card__icon" src="image/arrow-right.svg" alt="arrow-right">
+              </div>
+              <p class="card__text">Холдинг «Российские космические системы», входящий в состав «Роскосмоса»...</p>
+              <div class="card__bottom">
+                <div class="card__date-wrapper">
+                  <p class="card__date">16/03/2022</p>
+                  <p class="card__time">11:06</p>
+                </div>
+                <div class="card__author-wrapper">
+                  <p class="card__author">
+                    Эрик Крипке
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+          </a>
+          <a class="card">
+            <img class="card__image" src="image/news-img.png" alt="news-image">
+            <div class="card__content">
+              <div class="card__content-top">
+                <h3 class="card__title">В России начали выпускать суверенные печатные платы — в них только отечественное сырьё и материалы</h3>
+                <img class="card__icon" src="image/arrow-right.svg" alt="arrow-right">
+              </div>
+              <p class="card__text">Холдинг «Российские космические системы», входящий в состав «Роскосмоса»...</p>
+              <div class="card__bottom">
+                <div class="card__date-wrapper">
+                  <p class="card__date">16/03/2022</p>
+                  <p class="card__time">11:06</p>
+                </div>
+                <div class="card__author-wrapper">
+                  <p class="card__author">
+                    Эрик Крипке
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+          </a>
+          <a class="card">
+            <img class="card__image" src="image/news-img.png" alt="news-image">
+            <div class="card__content">
+              <div class="card__content-top">
+                <h3 class="card__title">В России начали выпускать суверенные печатные платы — в них только отечественное сырьё и материалы</h3>
+                <img class="card__icon" src="image/arrow-right.svg" alt="arrow-right">
+              </div>
+              <p class="card__text">Холдинг «Российские космические системы», входящий в состав «Роскосмоса»...</p>
+              <div class="card__bottom">
+                <div class="card__date-wrapper">
+                  <p class="card__date">16/03/2022</p>
+                  <p class="card__time">11:06</p>
+                </div>
+                <div class="card__author-wrapper">
+                  <p class="card__author">
+                    Эрик Крипке
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+          </a>
+          <a class="card">
+            <img class="card__image" src="image/news-img.png" alt="news-image">
+            <div class="card__content">
+              <div class="card__content-top">
+                <h3 class="card__title">В России начали выпускать суверенные печатные платы — в них только отечественное сырьё и материалы</h3>
+                <img class="card__icon" src="image/arrow-right.svg" alt="arrow-right">
+              </div>
+              <p class="card__text">Холдинг «Российские космические системы», входящий в состав «Роскосмоса»...</p>
+              <div class="card__bottom">
+                <div class="card__date-wrapper">
+                  <p class="card__date">16/03/2022</p>
+                  <p class="card__time">11:06</p>
+                </div>
+                <div class="card__author-wrapper">
+                  <p class="card__author">
+                    Эрик Крипке
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+          </a>
+          <a class="card">
+            <img class="card__image" src="image/news-img.png" alt="news-image">
+            <div class="card__content">
+              <div class="card__content-top">
+                <h3 class="card__title">В России начали выпускать суверенные печатные платы — в них только отечественное сырьё и материалы</h3>
+                <img class="card__icon" src="image/arrow-right.svg" alt="arrow-right">
+              </div>
+              <p class="card__text">Холдинг «Российские космические системы», входящий в состав «Роскосмоса»...</p>
+              <div class="card__bottom">
+                <div class="card__date-wrapper">
+                  <p class="card__date">16/03/2022</p>
+                  <p class="card__time">11:06</p>
+                </div>
+                <div class="card__author-wrapper">
+                  <p class="card__author">
+                    Эрик Крипке
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+          </a>
+          <a class="card">
+            <img class="card__image" src="image/news-img.png" alt="news-image">
+            <div class="card__content">
+              <div class="card__content-top">
+                <h3 class="card__title">В России начали выпускать суверенные печатные платы — в них только отечественное сырьё и материалы</h3>
+                <img class="card__icon" src="image/arrow-right.svg" alt="arrow-right">
+              </div>
+              <p class="card__text">Холдинг «Российские космические системы», входящий в состав «Роскосмоса»...</p>
+              <div class="card__bottom">
+                <div class="card__date-wrapper">
+                  <p class="card__date">16/03/2022</p>
+                  <p class="card__time">11:06</p>
+                </div>
+                <div class="card__author-wrapper">
+                  <p class="card__author">
+                    Эрик Крипке
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+          </a> -->
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-wrapper">
+        <a href="./" class="footer-logo">
+          <img src="image/logo.svg" alt="logo">
+        </a>
+        <p class="footer-years">
+          © 2020-2022 News
+        </p>
+        <div class="footer-social">
+          <a href="#" class="social-item social-tw">
+            <img class="social-icon" src="image/icons_twitter.svg" alt="">
+          </a>
+          <a href="#" class="social-item social-def">
+            <img class="social-icon" src="image/simple-icons.svg" alt="">
+          </a>
+          <a href="#" class="social-item social-vk">
+            <img class="social-icon" src="image/icons_vk.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

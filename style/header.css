@@ -1,0 +1,45 @@
+.header-wrapper {
+  padding: 21px 0 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-fieldset {
+  display: flex;
+}
+
+.header__form {
+  display: flex;
+}
+
+.header-fieldset {
+  position: relative;
+}
+
+.header-border {
+  border-radius: 22px;
+  border: 1px solid var(--light-grey, #e6e6e6);
+  background-color: var(--white, #FFF);
+}
+
+.header-input {
+  width: 500px;
+  padding: 16px 20px;
+}
+
+.header-btn {
+  position: absolute;
+  right: 22px;
+  top: 12px;
+}
+
+.header-select {
+  width: 320px;
+  padding: 16px 20px 17px 20px;
+  position: relative;
+  appearance: none;
+  overflow: hidden;
+  background: url('../image/Arrow-drop-down.svg');
+  background-repeat: no-repeat;
+  background-position: 280px 12px;
+}

@@ -1,0 +1,11 @@
+.section-title {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--light-grey, #e6e6e6);
+}
+
+.section-title__title,
+.section-title__title-search {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 130%;
+}

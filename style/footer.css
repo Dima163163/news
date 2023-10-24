@@ -1,0 +1,19 @@
+.footer-wrapper {
+  padding: 33px 0 39px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-social {
+  display: flex;
+  gap: 15px;
+}
+
+.social-item {
+  border-radius: 50%;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  background-color: var(--orange, #F2994A);
+}
