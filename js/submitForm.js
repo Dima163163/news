@@ -19,7 +19,7 @@ const submitForm = (form) => {
             console.log('newArr: ', newArr);
             document.querySelector('.section-search').style = 'display: block';
             document.querySelector('.section-title__title-search').textContent =
-            `По вашему запросу ${search}  найдено ${newArr.length}`;
+            `По вашему запросу "${search}"  найдено ${newArr.length}`;
             return renderCards(null, newArr);
           },
         }),
