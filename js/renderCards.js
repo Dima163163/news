@@ -31,14 +31,14 @@ const renderCards = (err, data, numb) => {
 
     const h3 = document.createElement('h3');
     h3.classList.add('card__title');
-    let newsTitle;
-    if (newsItem.description) {
-      newsTitle = newsItem?.title.split(' ');
-      newsTitle = newsTitle.slice(0, 10).join(' ') + '...';
-    } else {
-      newsTitle = '...';
-    }
-    h3.textContent = newsTitle;
+    // let newsTitle;
+    // if (newsItem.description) {
+    //   newsTitle = newsItem?.title.split(' ');
+    //   newsTitle = newsTitle.slice(0, 10).join(' ') + '...';
+    // } else {
+    //   newsTitle = '...';
+    // }
+    h3.textContent = newsItem.title;
 
     const imgIcon = document.createElement('img');
     imgIcon.classList.add('card__icon');

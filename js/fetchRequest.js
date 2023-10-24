@@ -1,9 +1,11 @@
-const URL = '';
+const URL = 'https://newsapi.org/v2/';
 const fetchRequest = async (postfix, {
   method = 'GET',
   callback,
   body,
-  headers,
+  headers = {
+    'X-Api-Key': 'cd5d32432a9141dbb4185980ae2144c8',
+  },
 }) => {
   try {
     const options = {

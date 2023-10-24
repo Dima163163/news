@@ -6,11 +6,12 @@ import submitForm from './submitForm.js';
 const wrapperCards = document.querySelector('.cards');
 const form = document.querySelector('.header__form');
 
+const select = document.querySelector('.header-select');
 
 const init = () => {
   preload.show();
   const response = new Promise((resolve) => {
-    resolve(fetchRequest('../headlines.json', {
+    resolve(fetchRequest(`top-headlines?country=${select.value}`, {
       callback: (err, data) => renderCards(null, data, 8),
     }));
   });

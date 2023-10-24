@@ -9,10 +9,11 @@ const submitForm = (form) => {
     const formData = new FormData(e.target);
     const newSearch = Object.fromEntries(formData);
     const search = newSearch.search;
+    const searchLang = newSearch.country;
     const init = () => {
       preload.show();
       return Promise.all([
-        fetchRequest(`../search.json`, {
+        fetchRequest(`everything?q=${search}`, {
           callback: (err, data) => {
             const newArr = data.articles.filter((item) =>
               item.title.includes(search));
@@ -23,7 +24,7 @@ const submitForm = (form) => {
             return renderCards(null, newArr, 8);
           },
         }),
-        fetchRequest('../headlines.json', {
+        fetchRequest(`top-headlines?country=${searchLang}`, {
           callback: (err, data) => renderCards(null, data, 4),
         }),
       ]);
